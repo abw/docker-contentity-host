@@ -1,3 +1,6 @@
 [submodule "build/badger"]
 	path = build/badger
 	url = git@github.com:abw/Badger.git
+[submodule "build/badger-database"]
+	path = build/badger-database
+	url = git@github.com:abw/Badger-Database.git
