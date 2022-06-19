@@ -4,3 +4,6 @@
 [submodule "build/badger-database"]
 	path = build/badger-database
 	url = git@github.com:abw/Badger-Database.git
+[submodule "build/contentity"]
+	path = build/contentity
+	url = git@github.com:abw/Contentity.git
