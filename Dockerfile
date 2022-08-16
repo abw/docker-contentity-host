@@ -1,4 +1,4 @@
-FROM    triksox/mod_perl:0.0.1
+FROM    triksox/mod_perl:0.0.2
 ENV     DEBIAN_FRONTEND=noninteractive
 RUN     apt update && \
         apt install -y \
@@ -8,12 +8,12 @@ RUN     apt update && \
         && \
         rm -rf /var/lib/apt/lists/* \
         && \
-        cpan JSON::XS \
+        cpan Cpanel::JSON::XS \
         Badger Template DBI DBD::mysql \
         Cache::Memcached HTML::Strip HTML::Entities \
         Image::Size Image::Info LWP::UserAgent WWW::Mechanize \
         SVG::Parser Text::QRCode \
-        Mail::Sender Email::Sender Geo::Coder::OpenCage IO::String IPC::Run \
+        Mail::Sender Email::Sender IO::String IPC::Run \
         Text::Markdown Spreadsheet::WriteExcel XML::LibXML
 COPY    build /build
 RUN     cd /build/badger && \
