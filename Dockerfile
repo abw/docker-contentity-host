@@ -13,7 +13,8 @@ RUN     apt update && \
         Cache::Memcached HTML::Strip HTML::Entities \
         Image::Size Image::Info LWP::UserAgent WWW::Mechanize \
         SVG::Parser Text::QRCode \
-        Mail::Sender Email::Sender IO::String IPC::Run \
+        IO::String IPC::Run \
+        Mail::Sender Email::Sender Email::Simple Email::MIME \
         Text::Markdown Spreadsheet::WriteExcel XML::LibXML
 COPY    build /build
 RUN     cd /build/badger && \
