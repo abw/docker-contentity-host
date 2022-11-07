@@ -1,4 +1,4 @@
-FROM    triksox/mod_perl:0.0.2
+FROM    triksox/mod_perl:0.0.3
 ENV     DEBIAN_FRONTEND=noninteractive
 RUN     apt update && \
         apt install -y \
